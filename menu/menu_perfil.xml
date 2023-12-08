@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/salirLogin"
+        android:title="Sign off" />
+    <item
+        android:id="@+id/eliminarCuenta"
+        android:title="Delete account" />
+    <item
+        android:id="@+id/busqueda"
+        android:title="Seeker"/>
+    <item
+        android:id="@+id/modificar"
+        android:title="Modify data"/>
+
+</menu>

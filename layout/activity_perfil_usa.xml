@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      tools:context=".Perfil_usa">
+
+    <TextView
+        android:id="@+id/textNombreApellido"
+        android:layout_width="108dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="40dp"
+        android:text="Nombre y Apellido"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.989"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imagePerf"
+        android:layout_width="107dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_add_photo_alternate_24" />
+
+
+    <Button
+        android:id="@+id/btnCmabioImag"
+        android:layout_width="157dp"
+        android:layout_height="53dp"
+        android:text="Change Image"
+        app:layout_constraintEnd_toEndOf="@+id/imagePerf"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/imagePerf"
+        app:layout_constraintTop_toBottomOf="@+id/imagePerf" />
+
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="85dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:text="PROFILE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="344dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="292dp"
+        android:text="Publications"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="344dp"
+        android:layout_height="374dp"
+        android:layout_marginTop="340dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+      <!-- Vista de entrada de texto -->
+      <EditText
+          android:id="@+id/editTextPublicacion"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Write your post here" />
+
+      <!-- Botón para publicar la publicación -->
+      <Button
+          android:id="@+id/btnPublicar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Post" />
+      <!-- Lista de publicaciones -->
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recyclerView"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textusua"
+        android:layout_width="108dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:text="Usuario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
